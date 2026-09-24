@@ -4,6 +4,7 @@ SKYNET COMPANY
 Primer entregable de JavaScript
 ==================================================
 */
+console.log("Fecha actual: " + diaActual + "/" + mesActual + "/" + anoActual);
 
 // ================================================
 // 1. PROGRAMA
@@ -31,7 +32,7 @@ function iniciarPrograma() {
 
     const john = prompt(
         "Hola " + nombre + " \n\n" +
-        "¿Lo conocés a John Connor?"
+        "¿Lo conocés a John Connor? (si/no)"
     );
 
     // ============================================
@@ -59,7 +60,7 @@ function iniciarPrograma() {
     const anoActual = hoy.getFullYear();
     const mesActual = hoy.getMonth() + 1;
     const diaActual = hoy.getDate();
-
+    
     // ============================================
     // 5. CÁLCULO DE EDAD
     // ============================================
@@ -111,6 +112,7 @@ function iniciarPrograma() {
         "Hola " + nombre \n\n" +
         "Tu edad es: " + edad + " años.\n\n" +
         mensajeJohn
+    
     );
 }
 
