@@ -42,15 +42,15 @@ function iniciarPrograma() {
     // ============================================
 
     const anoNacimiento = parseInt(
-        prompt("¿En qué año naciste? \n")
+        prompt("¿En qué año naciste?")
     );
 
     const mesNacimiento = parseInt(
-        prompt("¿En qué mes naciste? (1-12) \n")
+        prompt("¿En qué mes naciste? (1-12)")
     );
 
     const diaNacimiento = parseInt(
-        prompt("¿En qué día naciste?\n")
+        prompt("¿En qué día naciste?")
     );
 
     // ============================================
