@@ -29,13 +29,13 @@ function iniciarPrograma() {
     );
 
     const apellido = prompt(
-        "Hola " + nombre + " \n" +
+        "Hola " + nombre + "\n" +
         "¿Cuál es tu apellido?"
     );
 
-      const respuestaJohn = (prompt(
+    const respuestaJohn = (prompt(
         "¿Lo conoces a John Connor? Responde SI o NO"
-    ) || "").toLowerCase();
+    )).toLowerCase();
 
     // ============================================
     // 3. FECHA DE NACIMIENTO
@@ -64,7 +64,7 @@ function iniciarPrograma() {
     const diaActual = hoy.getDate();
 
     console.log("Fecha actual: " + diaActual + "/" + mesActual + "/" + anoActual);
-    
+
     // ============================================
     // 5. CÁLCULO DE EDAD
     // ============================================
@@ -111,7 +111,7 @@ function iniciarPrograma() {
     alert(
         "Hola " + nombre + " " + apellido + ". \n" +
         "Tu edad es: " + edad + " años. \n" +
-        mensajeJohn        
+        mensajeJohn
     );
 }
 
