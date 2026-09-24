@@ -10,7 +10,6 @@ Primer entregable de JavaScript
 // ================================================
 
 function iniciarPrograma() {
-
     // --------------------------------------------
     // Saludo inicial
     // --------------------------------------------
@@ -29,10 +28,14 @@ function iniciarPrograma() {
         "¿Cómo te llamás?"
     );
 
-    const john = prompt(
+    const apellido = prompt(
         "Hola " + nombre + " \n" +
-        "¿Lo conocés a John Connor? (si/no)"
+        "¿Cuál es tu apellido?"
     );
+
+      const respuestaJohn = (prompt(
+        "¿Lo conoces a John Connor? Responde SI o NO"
+    ) || "").toLowerCase();
 
     // ============================================
     // 3. FECHA DE NACIMIENTO
@@ -60,7 +63,6 @@ function iniciarPrograma() {
     const mesActual = hoy.getMonth() + 1;
     const diaActual = hoy.getDate();
 
-
     console.log("Fecha actual: " + diaActual + "/" + mesActual + "/" + anoActual);
     
     // ============================================
@@ -82,13 +84,9 @@ function iniciarPrograma() {
 
     let terrorista = false;
 
-    if (john.toLowerCase() === "si") {
+    if (respuestaJohn === "si") {
         terrorista = true;
     }
-
-    // ============================================
-    // 7. PREPARAR MENSAJE FINAL
-    // ============================================
 
     let mensajeJohn = "";
 
@@ -103,18 +101,17 @@ function iniciarPrograma() {
 
         mensajeJohn =
             "Cualquier dato de John Connor que nos\n" +
-            "proporciones nos ayudará a crear un mundo mejor.";
+            "proporciones, nos ayudará a crear un mundo mejor.";
     }
 
     // ============================================
-    // 8. RESULTADO FINAL
+    // 7. RESULTADO FINAL
     // ============================================
 
     alert(
-        "Hola " + nombre \n\n" +
+        "Hola " + nombre + " " + apellido + ". \n" +
         "Tu edad es: " + edad + " años. \n" +
-        mensajeJohn
-    
+        mensajeJohn        
     );
 }
 
