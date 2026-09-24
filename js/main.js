@@ -1,14 +1,15 @@
 /*
 ==================================================
 SKYNET COMPANY
-Primer entregable de Javascript.==================================================
+Primer entregable de JavaScript
+==================================================
 */
 
 // ================================================
-// 1. INICIO DEL PROGRAMA
+// 1. PROGRAMA
 // ================================================
 
-document.querySelector(".botonAlerta").addEventListener("click", function () {
+function iniciarPrograma() {
 
     // --------------------------------------------
     // Saludo inicial
@@ -65,9 +66,6 @@ document.querySelector(".botonAlerta").addEventListener("click", function () {
 
     let edad = anoActual - anoNacimiento;
 
-    // Si todavía no cumplió años este año,
-    // restamos un año a la edad.
-
     if (
         mesNacimiento > mesActual ||
         (mesNacimiento === mesActual && diaNacimiento > diaActual)
@@ -94,13 +92,14 @@ document.querySelector(".botonAlerta").addEventListener("click", function () {
     if (terrorista === true) {
 
         mensajeJohn =
-            "¡CUIDADO! John Connor es un terrorista \n" + "y eso te hace complice de sus actos. \n" +
+            "¡CUIDADO! John Connor es un terrorista\n" +
+            "y eso te hace cómplice de sus actos.\n" +
             "¡Debes decirnos su ubicación!";
 
     } else {
 
         mensajeJohn =
-            "Cualquier dato de John Connor que nos \n" +
+            "Cualquier dato de John Connor que nos\n" +
             "proporciones nos ayudará a crear un mundo mejor.";
     }
 
@@ -113,5 +112,12 @@ document.querySelector(".botonAlerta").addEventListener("click", function () {
         "Tu edad es: " + edad + " años.\n\n" +
         mensajeJohn
     );
+}
 
-});
+// ================================================
+// 9. BOTÓN
+// ================================================
+
+const botonAlerta = document.querySelector(".botonAlerta");
+
+botonAlerta.addEventListener("click", iniciarPrograma);
