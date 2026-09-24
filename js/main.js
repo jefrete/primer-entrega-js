@@ -4,7 +4,6 @@ SKYNET COMPANY
 Primer entregable de JavaScript
 ==================================================
 */
-console.log("Fecha actual: " + diaActual + "/" + mesActual + "/" + anoActual);
 
 // ================================================
 // 1. PROGRAMA
@@ -17,7 +16,7 @@ function iniciarPrograma() {
     // --------------------------------------------
 
     alert(
-        "BUENOS DIAS\n\n" +
+        "BUENOS DIAS\n" +
         "BIENVENIDO A SKYNET COMPANY \n" +
         "Soy T-1000 el asistente virtual de la empresa."
     );
@@ -31,7 +30,7 @@ function iniciarPrograma() {
     );
 
     const john = prompt(
-        "Hola " + nombre + " \n\n" +
+        "Hola " + nombre + " \n" +
         "¿Lo conocés a John Connor? (si/no)"
     );
 
@@ -40,15 +39,15 @@ function iniciarPrograma() {
     // ============================================
 
     const anoNacimiento = parseInt(
-        prompt("¿En qué año naciste?\n\n")
+        prompt("¿En qué año naciste? \n")
     );
 
     const mesNacimiento = parseInt(
-        prompt("¿En qué mes naciste? (1-12)\n\n")
+        prompt("¿En qué mes naciste? (1-12) \n")
     );
 
     const diaNacimiento = parseInt(
-        prompt("¿En qué día naciste?\n\n")
+        prompt("¿En qué día naciste?\n")
     );
 
     // ============================================
@@ -60,6 +59,9 @@ function iniciarPrograma() {
     const anoActual = hoy.getFullYear();
     const mesActual = hoy.getMonth() + 1;
     const diaActual = hoy.getDate();
+
+
+    console.log("Fecha actual: " + diaActual + "/" + mesActual + "/" + anoActual);
     
     // ============================================
     // 5. CÁLCULO DE EDAD
@@ -110,7 +112,7 @@ function iniciarPrograma() {
 
     alert(
         "Hola " + nombre \n\n" +
-        "Tu edad es: " + edad + " años.\n\n" +
+        "Tu edad es: " + edad + " años. \n" +
         mensajeJohn
     
     );
