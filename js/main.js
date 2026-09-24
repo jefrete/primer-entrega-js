@@ -17,7 +17,7 @@ function iniciarPrograma() {
 
     alert(
         "BUENOS DIAS\n\n" +
-        "BIENVENIDO A SKYNET COMPANY 👋\n" +
+        "BIENVENIDO A SKYNET COMPANY \n" +
         "Soy T-1000 el asistente virtual de la empresa."
     );
 
@@ -30,7 +30,7 @@ function iniciarPrograma() {
     );
 
     const john = prompt(
-        "Hola " + nombre + " 👋\n\n" +
+        "Hola " + nombre + " \n\n" +
         "¿Lo conocés a John Connor?"
     );
 
@@ -108,7 +108,7 @@ function iniciarPrograma() {
     // ============================================
 
     alert(
-        "Hola " + nombre + " 👋\n\n" +
+        "Hola " + nombre \n\n" +
         "Tu edad es: " + edad + " años.\n\n" +
         mensajeJohn
     );
